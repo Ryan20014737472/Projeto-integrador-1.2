@@ -2,7 +2,7 @@
 
 Site educacional sobre uma proposta de piscina sustentável: aquecimento solar térmico, conservação da água, automação e inclusão digital.
 
-**Endereço do site após ativar o GitHub Pages:** https://ryan20014737472.github.io/Projeto-integrador-1.2/
+**Site publicado:** [Abrir Sol & Água](https://ryan20014737472.github.io/Projeto-integrador-1.2/)
 
 ## Conteúdo e tecnologia
 
@@ -24,7 +24,7 @@ node scripts/verificar.mjs
 
 As páginas HTML ficam na raiz e podem ser servidas diretamente. O workflow `.github/workflows/pages.yml` testa e publica `main`. Em **Settings → Pages**, a origem é **GitHub Actions**. `node scripts/publicar.mjs` prepara apenas os arquivos públicos em `_site/`, ignorado pelo Git.
 
-Para a primeira publicação, abra [Settings → Pages](https://github.com/Ryan20014737472/Projeto-integrador-1.2/settings/pages), escolha **GitHub Actions** em **Source** e execute **Run workflow** em [Actions](https://github.com/Ryan20014737472/Projeto-integrador-1.2/actions/workflows/pages.yml). Enquanto o Pages não está habilitado, o workflow verifica o código e informa a configuração pendente, sem publicar.
+O GitHub Pages já está habilitado com a origem **GitHub Actions**. Novos envios para `main` executam as verificações e atualizam o site automaticamente. Também é possível executar **Run workflow** em [Actions](https://github.com/Ryan20014737472/Projeto-integrador-1.2/actions/workflows/pages.yml).
 
 ## Editar
 
