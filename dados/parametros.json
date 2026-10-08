@@ -1,0 +1,46 @@
+{
+  "descricao": "Parâmetros didáticos do projeto Sol & Água. Não são medições da piscina.",
+  "calor_especifico": {
+    "valor": 4186,
+    "unidade": "J/(kg·°C)",
+    "tipo": "aproximacao_fisica",
+    "fonte": "https://openstax.org/books/college-physics-2e/pages/14-2-temperature-change-and-heat-capacity"
+  },
+  "densidade": {"valor": 1, "unidade": "kg/L", "tipo": "aproximacao_fisica"},
+  "aquecimento_padrao": {
+    "volume_litros": 10000,
+    "temperatura_inicial_c": 22,
+    "temperatura_desejada_c": 28,
+    "area_coletora_m2": 12,
+    "irradiancia_w_m2": 800,
+    "eficiencia_coletor_percentual": 65,
+    "perda_adicional_percentual": 15,
+    "tipo": "cenario_ilustrativo_editavel"
+  },
+  "agua_padrao": {
+    "area_superficial_m2": 32,
+    "evaporacao_mm_dia": 5,
+    "periodo_dias": 30,
+    "horas_coberta_dia": 16,
+    "reducao_durante_cobertura_percentual": 80,
+    "tipo": "cenario_ilustrativo_editavel",
+    "nota": "A EPA relata até 95% de redução de evaporação com cobertura adequada; 80% é uma hipótese para explorar.",
+    "fonte": "https://www.epa.gov/watersense/pool-water-efficiency"
+  },
+  "comparativo": {
+    "resistencia_potencia_eletrica_kw": 6,
+    "eficiencia_resistencia_percentual": 95,
+    "potencia_bomba_w": 100,
+    "tarifa_exemplo_brl_kwh": 0.9,
+    "tipo": "hipoteses_didaticas",
+    "custos_incluidos": "Eletricidade do aquecimento e da bomba durante o episódio calculado.",
+    "custos_excluidos": ["compra", "instalacao", "manutencao", "demanda tarifaria", "filtragem regular"]
+  },
+  "automacao": {
+    "diferenca_para_ligar_c": 4,
+    "diferenca_para_desligar_c": 2,
+    "nivel_minimo_percentual": 40,
+    "tipo": "limiares_demonstrativos",
+    "nota": "Não são limites universais de equipamentos. A filtragem tem rotina separada do aquecimento."
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "axe": [
+    {
+      "pagina": "index.html",
+      "tema": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "passes": 42
+    },
+    {
+      "pagina": "projeto-piscina.html",
+      "tema": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "passes": 47
+    },
+    {
+      "pagina": "ciencia.html",
+      "tema": "light",
+      "violations": [],
+      "incomplete": [],
+      "passes": 46
+    },
+    {
+      "pagina": "simuladores.html",
+      "tema": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ],
+      "passes": 48
+    },
+    {
+      "pagina": "comparativos.html",
+      "tema": "light",
+      "violations": [],
+      "incomplete": [],
+      "passes": 49
+    },
+    {
+      "pagina": "sustentabilidade.html",
+      "tema": "light",
+      "violations": [],
+      "incomplete": [],
+      "passes": 41
+    },
+    {
+      "pagina": "acessibilidade.html",
+      "tema": "light",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ],
+      "passes": 44
+    },
+    {
+      "pagina": "mapa-do-site.html",
+      "tema": "light",
+      "violations": [],
+      "incomplete": [],
+      "passes": 41
+    },
+    {
+      "pagina": "index.html",
+      "tema": "contrast",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "passes": 42
+    },
+    {
+      "pagina": "projeto-piscina.html",
+      "tema": "contrast",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "passes": 47
+    },
+    {
+      "pagina": "ciencia.html",
+      "tema": "contrast",
+      "violations": [],
+      "incomplete": [],
+      "passes": 46
+    },
+    {
+      "pagina": "simuladores.html",
+      "tema": "contrast",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 12
+        }
+      ],
+      "passes": 48
+    },
+    {
+      "pagina": "comparativos.html",
+      "tema": "contrast",
+      "violations": [],
+      "incomplete": [],
+      "passes": 49
+    },
+    {
+      "pagina": "sustentabilidade.html",
+      "tema": "contrast",
+      "violations": [],
+      "incomplete": [],
+      "passes": 41
+    },
+    {
+      "pagina": "acessibilidade.html",
+      "tema": "contrast",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ],
+      "passes": 44
+    },
+    {
+      "pagina": "mapa-do-site.html",
+      "tema": "contrast",
+      "violations": [],
+      "incomplete": [],
+      "passes": 41
+    }
+  ],
+  "responsividade": [
+    {
+      "pagina": "index.html",
+      "largura": 320,
+      "overflow": false
+    },
+    {
+      "pagina": "projeto-piscina.html",
+      "largura": 320,
+      "overflow": false
+    },
+    {
+      "pagina": "ciencia.html",
+      "largura": 320,
+      "overflow": false
+    },
+    {
+      "pagina": "simuladores.html",
+      "largura": 320,
+      "overflow": false
+    },
+    {
+      "pagina": "comparativos.html",
+      "largura": 320,
+      "overflow": false
+    },
+    {
+      "pagina": "sustentabilidade.html",
+      "largura": 320,
+      "overflow": false
+    },
+    {
+      "pagina": "acessibilidade.html",
+      "largura": 320,
+      "overflow": false
+    },
+    {
+      "pagina": "mapa-do-site.html",
+      "largura": 320,
+      "overflow": false
+    },
+    {
+      "pagina": "index.html",
+      "largura": 390,
+      "overflow": false
+    },
+    {
+      "pagina": "projeto-piscina.html",
+      "largura": 390,
+      "overflow": false
+    },
+    {
+      "pagina": "ciencia.html",
+      "largura": 390,
+      "overflow": false
+    },
+    {
+      "pagina": "simuladores.html",
+      "largura": 390,
+      "overflow": false
+    },
+    {
+      "pagina": "comparativos.html",
+      "largura": 390,
+      "overflow": false
+    },
+    {
+      "pagina": "sustentabilidade.html",
+      "largura": 390,
+      "overflow": false
+    },
+    {
+      "pagina": "acessibilidade.html",
+      "largura": 390,
+      "overflow": false
+    },
+    {
+      "pagina": "mapa-do-site.html",
+      "largura": 390,
+      "overflow": false
+    },
+    {
+      "pagina": "index.html",
+      "largura": 768,
+      "overflow": false
+    },
+    {
+      "pagina": "projeto-piscina.html",
+      "largura": 768,
+      "overflow": false
+    },
+    {
+      "pagina": "ciencia.html",
+      "largura": 768,
+      "overflow": false
+    },
+    {
+      "pagina": "simuladores.html",
+      "largura": 768,
+      "overflow": false
+    },
+    {
+      "pagina": "comparativos.html",
+      "largura": 768,
+      "overflow": false
+    },
+    {
+      "pagina": "sustentabilidade.html",
+      "largura": 768,
+      "overflow": false
+    },
+    {
+      "pagina": "acessibilidade.html",
+      "largura": 768,
+      "overflow": false
+    },
+    {
+      "pagina": "mapa-do-site.html",
+      "largura": 768,
+      "overflow": false
+    },
+    {
+      "pagina": "index.html",
+      "largura": 1024,
+      "overflow": false
+    },
+    {
+      "pagina": "projeto-piscina.html",
+      "largura": 1024,
+      "overflow": false
+    },
+    {
+      "pagina": "ciencia.html",
+      "largura": 1024,
+      "overflow": false
+    },
+    {
+      "pagina": "simuladores.html",
+      "largura": 1024,
+      "overflow": false
+    },
+    {
+      "pagina": "comparativos.html",
+      "largura": 1024,
+      "overflow": false
+    },
+    {
+      "pagina": "sustentabilidade.html",
+      "largura": 1024,
+      "overflow": false
+    },
+    {
+      "pagina": "acessibilidade.html",
+      "largura": 1024,
+      "overflow": false
+    },
+    {
+      "pagina": "mapa-do-site.html",
+      "largura": 1024,
+      "overflow": false
+    },
+    {
+      "pagina": "index.html",
+      "largura": 1440,
+      "overflow": false
+    },
+    {
+      "pagina": "projeto-piscina.html",
+      "largura": 1440,
+      "overflow": false
+    },
+    {
+      "pagina": "ciencia.html",
+      "largura": 1440,
+      "overflow": false
+    },
+    {
+      "pagina": "simuladores.html",
+      "largura": 1440,
+      "overflow": false
+    },
+    {
+      "pagina": "comparativos.html",
+      "largura": 1440,
+      "overflow": false
+    },
+    {
+      "pagina": "sustentabilidade.html",
+      "largura": 1440,
+      "overflow": false
+    },
+    {
+      "pagina": "acessibilidade.html",
+      "largura": 1440,
+      "overflow": false
+    },
+    {
+      "pagina": "mapa-do-site.html",
+      "largura": 1440,
+      "overflow": false
+    },
+    {
+      "pagina": "index.html",
+      "largura": 320,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "simuladores.html",
+      "largura": 320,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "comparativos.html",
+      "largura": 320,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "acessibilidade.html",
+      "largura": 320,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "index.html",
+      "largura": 390,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "simuladores.html",
+      "largura": 390,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "comparativos.html",
+      "largura": 390,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "acessibilidade.html",
+      "largura": 390,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "index.html",
+      "largura": 768,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "simuladores.html",
+      "largura": 768,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "comparativos.html",
+      "largura": 768,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "acessibilidade.html",
+      "largura": 768,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "index.html",
+      "largura": 1024,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "simuladores.html",
+      "largura": 1024,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "comparativos.html",
+      "largura": 1024,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "acessibilidade.html",
+      "largura": 1024,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "index.html",
+      "largura": 1440,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "simuladores.html",
+      "largura": 1440,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "comparativos.html",
+      "largura": 1440,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "acessibilidade.html",
+      "largura": 1440,
+      "leitura_ampliada": true,
+      "overflow": false
+    },
+    {
+      "pagina": "index.html",
+      "largura": 390,
+      "texto_200_percentual": true,
+      "overflow": false
+    },
+    {
+      "pagina": "simuladores.html",
+      "largura": 390,
+      "texto_200_percentual": true,
+      "overflow": false
+    },
+    {
+      "pagina": "acessibilidade.html",
+      "largura": 390,
+      "texto_200_percentual": true,
+      "overflow": false
+    }
+  ],
+  "interacoes": [
+    "Link de salto, menu e modal operáveis pelo teclado, com retorno de foco.",
+    "Abas, aquecimento, restauração, campo vazio, controle por setas, Sol zero e meta atingida.",
+    "Economia de água: cenário de referência, cobertura zero e cobertura integral.",
+    "Automação: histerese, nível baixo, falha e restauração.",
+    "Comparativo: ausência de Sol e meta já atingida, sem custo fictício.",
+    "Persistência de contraste, OpenDyslexic, espaçamento, ampliação de 150% e movimentos reduzidos.",
+    "Refluxo com texto ampliado a 200% nas páginas de início, simuladores e acessibilidade.",
+    "Conteúdo científico e referências disponíveis sem JavaScript."
+  ],
+  "erros_js": []
+}
