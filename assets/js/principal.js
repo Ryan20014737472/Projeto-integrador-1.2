@@ -55,11 +55,14 @@
     document.querySelectorAll('[data-toggle-motion]').forEach(button => {
       button.disabled = reduzido;
       button.setAttribute('aria-pressed',String(pausada || reduzido));
-      button.querySelector('[data-motion-label]').textContent = reduzido ? 'Movimentos reduzidos' : pausada ? 'Retomar animação' : 'Pausar animação';
+      const label = reduzido ? 'Movimentos reduzidos' : pausada ? 'Retomar animação' : 'Pausar animação';
+      button.querySelector('[data-motion-label]').textContent = label;
+      button.setAttribute('aria-label',label);
     });
   }
   document.querySelectorAll('[data-toggle-motion]').forEach(button => button.addEventListener('click', () => {
     root.dataset.paused = root.dataset.paused === 'true' ? 'false' : 'true'; sincronizarMovimento();
+    anunciar(root.dataset.paused === 'true' ? 'Animações pausadas.' : 'Animações retomadas.');
   }));
   window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', sincronizarMovimento);
   sincronizarLeitura();

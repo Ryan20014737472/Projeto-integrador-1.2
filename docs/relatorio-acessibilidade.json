@@ -7,7 +7,7 @@
       "incomplete": [
         {
           "id": "color-contrast",
-          "nodes": 6
+          "nodes": 16
         }
       ],
       "passes": 42
@@ -83,7 +83,7 @@
       "incomplete": [
         {
           "id": "color-contrast",
-          "nodes": 6
+          "nodes": 7
         }
       ],
       "passes": 42
@@ -495,13 +495,15 @@
   ],
   "interacoes": [
     "Link de salto, menu e modal operáveis pelo teclado, com retorno de foco.",
+    "Cena da piscina: etapas pelo teclado, cobertura animada e pausa global com nome acessível atualizado.",
     "Abas, aquecimento, restauração, campo vazio, controle por setas, Sol zero e meta atingida.",
     "Economia de água: cenário de referência, cobertura zero e cobertura integral.",
     "Automação: histerese, nível baixo, falha e restauração.",
     "Comparativo: ausência de Sol e meta já atingida, sem custo fictício.",
     "Persistência de contraste, OpenDyslexic, espaçamento, ampliação de 150% e movimentos reduzidos.",
     "Refluxo com texto ampliado a 200% nas páginas de início, simuladores e acessibilidade.",
-    "Conteúdo científico e referências disponíveis sem JavaScript."
+    "Conteúdo científico e referências disponíveis sem JavaScript.",
+    "Preferência do sistema por movimentos reduzidos respeitada, com etapas interativas disponíveis."
   ],
   "erros_js": []
 }

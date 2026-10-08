@@ -24,9 +24,11 @@ for(const [arquivo,{html,ids}] of documentos){
     for(const id of m[1].split(' '))if(!ids.has(id))erros.push(`${arquivo}: referência de acessibilidade sem destino: ${id}`);
   }
 }
-const css=await readFile(resolve(raiz,'assets/css/estilos.css'),'utf8');
-for(const m of css.matchAll(/url\(['"]?([^)'"\s]+)['"]?\)/g)){
-  try{await access(resolve(raiz,'assets/css',m[1]));}catch{erros.push(`CSS: recurso ausente ${m[1]}`);}
+for(const arquivoCss of (await readdir(resolve(raiz,'assets/css'))).filter(n=>n.endsWith('.css'))){
+  const css=await readFile(resolve(raiz,'assets/css',arquivoCss),'utf8');
+  for(const m of css.matchAll(/url\(['"]?([^)'"\s]+)['"]?\)/g)){
+    try{await access(resolve(raiz,'assets/css',m[1]));}catch{erros.push(`${arquivoCss}: recurso ausente ${m[1]}`);}
+  }
 }
 const parametros=JSON.parse(await readFile(resolve(raiz,'dados/parametros.json'),'utf8'));
 if(parametros.calor_especifico.valor!==4186)erros.push('Calor específico não corresponde ao modelo documentado.');

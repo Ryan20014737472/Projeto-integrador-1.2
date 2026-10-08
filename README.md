@@ -8,6 +8,8 @@ Site educacional sobre uma proposta de piscina sustentável: aquecimento solar t
 
 Oito páginas em HTML semântico, CSS responsivo, JavaScript e SVG. Três simuladores, comparativos dinâmicos, fundamentos científicos, referências, sustentabilidade, acessibilidade e mapa do site. Fontes locais e VLibras sob demanda. Não há framework, dependência npm ou servidor de aplicação.
 
+A identidade visual usa a linguagem de um caderno de campo, com títulos em Fraunces e uma piscina desenhada em SVG. A cena tem etapas de captação, circulação e conservação, água em movimento e cobertura animada. Há controle de pausa e respeito às preferências de movimentos reduzidos.
+
 ## Executar e verificar
 
 ```bash
@@ -29,10 +31,13 @@ O GitHub Pages já está habilitado com a origem **GitHub Actions**. Novos envio
 ## Editar
 
 - Conteúdo: `scripts/paginas-conteudo.mjs` e `scripts/paginas-laboratorio.mjs`.
+- Página inicial: `scripts/pagina-inicial.mjs`.
+- Desenhos da piscina e das experiências: `scripts/ilustracoes.mjs`.
 - Estrutura compartilhada: `scripts/layout.mjs`.
-- Visual: `assets/css/estilos.css`.
+- Componentes: `assets/css/estilos.css`; identidade visual: `assets/css/identidade.css`.
 - Fórmulas: `assets/js/modelos.js`.
 - Interações: `assets/js/simuladores.js` e `assets/js/principal.js`.
+- Etapas da ilustração, entradas ao rolar e índice de leitura: `assets/js/visual.js`.
 - Parâmetros e origem: `dados/parametros.json`.
 
 Após editar templates, execute `node scripts/construir.mjs` e envie os HTML atualizados.

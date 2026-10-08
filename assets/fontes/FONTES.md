@@ -2,6 +2,8 @@
 
 **Manrope:** fonte padrão em WOFF2, distribuída pelo Google Fonts. Licença SIL Open Font License 1.1 em `OFL-Manrope.txt`.
 
+**Fraunces:** fonte variável para títulos e notas visuais, nos estilos normal e itálico. Arquivos WOFF2 locais, distribuídos pelo [Google Fonts](https://fonts.google.com/specimen/Fraunces). Licença SIL Open Font License 1.1 em `OFL-Fraunces.txt`.
+
 **OpenDyslexic:** opção de leitura em WOFF, do [repositório de Abelardo Gonzalez](https://github.com/antijingoist/open-dyslexic), arquivo `woff/OpenDyslexic-Regular.woff`.
 
 Esta versão atribui os desenhos originais à Bitstream e as alterações/glifos a Abelardo Gonzalez sob Creative Commons Attribution 3.0 Unported. Os metadados estão preservados em `LICENCA-OpenDyslexic.txt`.
