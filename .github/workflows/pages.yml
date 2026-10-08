@@ -35,12 +35,27 @@ jobs:
         run: node scripts/verificar.mjs
       - name: Preparar os arquivos públicos
         run: node scripts/publicar.mjs
+      - name: Verificar configuração do GitHub Pages
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sol_agua_pages_type="$(gh api "repos/${GITHUB_REPOSITORY}/pages" --jq '.build_type' 2>/dev/null || true)"
+          if [ "$sol_agua_pages_type" = "workflow" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Validação concluída. Para publicar, ative Settings > Pages > Source: GitHub Actions e execute este workflow novamente."
+          fi
       - name: Configurar GitHub Pages
+        if: steps.pages.outputs.enabled == 'true'
         uses: actions/configure-pages@v5
       - name: Enviar arquivos do site
+        if: steps.pages.outputs.enabled == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
       - name: Publicar
+        if: steps.pages.outputs.enabled == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
