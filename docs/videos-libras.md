@@ -20,7 +20,7 @@ A seção em `acessibilidade.html` lê `dados/videos.json` e apresenta controles
 }
 ```
 
-Esse exemplo é um formato; esses vídeos ainda não existem no projeto. O código aceita apenas arquivos da pasta local `assets/videos/`.
+Esse exemplo é um formato; esses vídeos ainda não existem no projeto. O código aceita apenas vídeos `.mp4`/`.webm` e legendas `.vtt` da pasta local `assets/videos/`. Uma entrada inválida não impede a apresentação das outras. `node scripts/verificar.mjs` confere os campos, a existência dos arquivos e o cabeçalho das legendas antes da publicação.
 
 Exemplo de formato VTT, com tempos que devem ser adaptados à gravação:
 

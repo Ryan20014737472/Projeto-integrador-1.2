@@ -124,7 +124,7 @@
   }));
 
   prepararFormulario('form-comparativo','comparativo-erro',entrada=>{
-    const r=modelos.comparacao({...entrada,area:12,eficiencia:65,perdas:15,bomba:100});
+    const r=modelos.comparacao({...entrada,...modelos.CENARIO_COMPARATIVO});
     const solar=r.energiaSolarRede===null;
     texto('comp-custo-solar',solar?'Sem previsão':`R$ ${f(r.custoSolar,2)}`);texto('comp-custo-eletrico',`R$ ${f(r.custoEletrico,2)}`);
     texto('comp-energia-solar',solar?'Sem aquecimento':`${f(r.energiaSolarRede,2)} kWh`);texto('comp-energia-eletrica',`${f(r.energiaEletrica,2)} kWh`);

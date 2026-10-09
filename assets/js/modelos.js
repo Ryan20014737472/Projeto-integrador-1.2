@@ -3,8 +3,9 @@
   'use strict';
   const CALOR_ESPECIFICO = 4186; // J / (kg · °C), água aproximada.
   const JOULES_POR_KWH = 3600000;
+  const CENARIO_COMPARATIVO = Object.freeze({ area: 12, eficiencia: 65, perdas: 15, bomba: 100 });
   function numero(valor, nome, minimo, maximo) {
-    if (valor === '' || valor === null || valor === undefined || typeof valor === 'boolean') {
+    if (!['number','string'].includes(typeof valor) || (typeof valor === 'string' && valor.trim() === '')) {
       throw new RangeError(`${nome}: informe um número.`);
     }
     const n = Number(valor);
@@ -73,7 +74,7 @@
       custoSolar: energiaSolarRede === null ? null : energiaSolarRede * tarifa,
       economia: energiaSolarRede === null ? null : (energiaEletrica - energiaSolarRede) * tarifa };
   }
-  const api = { CALOR_ESPECIFICO, JOULES_POR_KWH, aquecimento, agua, automacao, comparacao };
+  const api = { CALOR_ESPECIFICO, JOULES_POR_KWH, CENARIO_COMPARATIVO, aquecimento, agua, automacao, comparacao };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.ModelosPiscina = Object.freeze(api);
 })(typeof globalThis !== 'undefined' ? globalThis : this);

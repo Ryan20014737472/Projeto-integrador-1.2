@@ -1,4 +1,3031 @@
 {
+  "data": "2026-10-09",
+  "referencia": "WCAG 2.2 AA; cenários didáticos sem sensores conectados.",
+  "ferramentas": {
+    "playwright": "Python",
+    "axe": "4.10.3"
+  },
+  "navegadores": [
+    {
+      "motor": "chromium",
+      "versao": "151.0.7922.34"
+    },
+    {
+      "motor": "firefox",
+      "versao": "153.0"
+    },
+    {
+      "motor": "webkit",
+      "versao": "26.5"
+    }
+  ],
+  "casos": [
+    {
+      "navegador": "chromium",
+      "caso": "Navegação, mapa, âncoras e downloads",
+      "aprovado": true,
+      "duracao_s": 0.65
+    },
+    {
+      "navegador": "chromium",
+      "caso": "Menu, salto e retorno de foco",
+      "aprovado": true,
+      "duracao_s": 0.44
+    },
+    {
+      "navegador": "chromium",
+      "caso": "Modal, ciclo de foco, fechamento e sincronização",
+      "aprovado": true,
+      "duracao_s": 0.82
+    },
+    {
+      "navegador": "chromium",
+      "caso": "Leitura de 90% a 200%, ajustes e restauração",
+      "aprovado": true,
+      "duracao_s": 1.35
+    },
+    {
+      "navegador": "chromium",
+      "caso": "Preferências malformadas",
+      "aprovado": true,
+      "duracao_s": 0.45
+    },
+    {
+      "navegador": "chromium",
+      "caso": "Armazenamento bloqueado",
+      "aprovado": true,
+      "duracao_s": 0.24
+    },
+    {
+      "navegador": "chromium",
+      "caso": "Pausa persistente e mudanças da preferência do sistema",
+      "aprovado": true,
+      "duracao_s": 0.43
+    },
+    {
+      "navegador": "chromium",
+      "caso": "Cena interativa e animação",
+      "aprovado": true,
+      "duracao_s": 0.63
+    },
+    {
+      "navegador": "chromium",
+      "caso": "Abas: setas, Home, End e URL",
+      "aprovado": true,
+      "duracao_s": 0.2
+    },
+    {
+      "navegador": "chromium",
+      "caso": "Aquecimento: todos os parâmetros, exemplos, gráfico e anúncio",
+      "aprovado": true,
+      "duracao_s": 1.65
+    },
+    {
+      "navegador": "chromium",
+      "caso": "Aquecimento: entradas inválidas, Sol zero e meta atingida",
+      "aprovado": true,
+      "duracao_s": 1.13
+    },
+    {
+      "navegador": "chromium",
+      "caso": "Água: parâmetros, limites, tabela e anúncio",
+      "aprovado": true,
+      "duracao_s": 1.12
+    },
+    {
+      "navegador": "chromium",
+      "caso": "Automação: presets, histerese, bloqueios e histórico",
+      "aprovado": true,
+      "duracao_s": 1.23
+    },
+    {
+      "navegador": "chromium",
+      "caso": "Comparativo: custos, tarifa zero e pouca irradiância",
+      "aprovado": true,
+      "duracao_s": 0.26
+    },
+    {
+      "navegador": "chromium",
+      "caso": "Índice de leitura e progresso após redimensionamento",
+      "aprovado": true,
+      "duracao_s": 11.44
+    },
+    {
+      "navegador": "chromium",
+      "caso": "VLibras já carregado: modal e abertura",
+      "aprovado": true,
+      "duracao_s": 0.21
+    },
+    {
+      "navegador": "chromium",
+      "caso": "VLibras: carregamento sob demanda, falha e nova tentativa",
+      "aprovado": true,
+      "duracao_s": 0.56
+    },
+    {
+      "navegador": "chromium",
+      "caso": "VLibras: inicialização atrasada sem duplicar script",
+      "aprovado": true,
+      "duracao_s": 0.57
+    },
+    {
+      "navegador": "chromium",
+      "caso": "Vídeos: catálogo vazio ou indisponível",
+      "aprovado": true,
+      "duracao_s": 0.55
+    },
+    {
+      "navegador": "chromium",
+      "caso": "Vídeos: itens inválidos, transcrição, legendas e reprodução",
+      "aprovado": true,
+      "duracao_s": 0.25
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Navegação, mapa, âncoras e downloads",
+      "aprovado": true,
+      "duracao_s": 2.5
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Menu, salto e retorno de foco",
+      "aprovado": true,
+      "duracao_s": 1.31
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Modal, ciclo de foco, fechamento e sincronização",
+      "aprovado": true,
+      "duracao_s": 0.93
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Leitura de 90% a 200%, ajustes e restauração",
+      "aprovado": true,
+      "duracao_s": 2.23
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Preferências malformadas",
+      "aprovado": true,
+      "duracao_s": 0.78
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Armazenamento bloqueado",
+      "aprovado": true,
+      "duracao_s": 0.57
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Pausa persistente e mudanças da preferência do sistema",
+      "aprovado": true,
+      "duracao_s": 1.09
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Cena interativa e animação",
+      "aprovado": true,
+      "duracao_s": 0.57
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Abas: setas, Home, End e URL",
+      "aprovado": true,
+      "duracao_s": 0.53
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Aquecimento: todos os parâmetros, exemplos, gráfico e anúncio",
+      "aprovado": true,
+      "duracao_s": 1.77
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Aquecimento: entradas inválidas, Sol zero e meta atingida",
+      "aprovado": true,
+      "duracao_s": 0.65
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Água: parâmetros, limites, tabela e anúncio",
+      "aprovado": true,
+      "duracao_s": 1.45
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Automação: presets, histerese, bloqueios e histórico",
+      "aprovado": true,
+      "duracao_s": 1.52
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Comparativo: custos, tarifa zero e pouca irradiância",
+      "aprovado": true,
+      "duracao_s": 0.58
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Índice de leitura e progresso após redimensionamento",
+      "aprovado": true,
+      "duracao_s": 5.52
+    },
+    {
+      "navegador": "firefox",
+      "caso": "VLibras já carregado: modal e abertura",
+      "aprovado": true,
+      "duracao_s": 0.56
+    },
+    {
+      "navegador": "firefox",
+      "caso": "VLibras: carregamento sob demanda, falha e nova tentativa",
+      "aprovado": true,
+      "duracao_s": 0.85
+    },
+    {
+      "navegador": "firefox",
+      "caso": "VLibras: inicialização atrasada sem duplicar script",
+      "aprovado": true,
+      "duracao_s": 0.84
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Vídeos: catálogo vazio ou indisponível",
+      "aprovado": true,
+      "duracao_s": 1.53
+    },
+    {
+      "navegador": "firefox",
+      "caso": "Vídeos: itens inválidos, transcrição, legendas e reprodução",
+      "aprovado": true,
+      "duracao_s": 0.53
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Navegação, mapa, âncoras e downloads",
+      "aprovado": true,
+      "duracao_s": 1.91
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Menu, salto e retorno de foco",
+      "aprovado": true,
+      "duracao_s": 1.41
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Modal, ciclo de foco, fechamento e sincronização",
+      "aprovado": true,
+      "duracao_s": 1.7
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Leitura de 90% a 200%, ajustes e restauração",
+      "aprovado": true,
+      "duracao_s": 4.35
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Preferências malformadas",
+      "aprovado": true,
+      "duracao_s": 1.31
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Armazenamento bloqueado",
+      "aprovado": true,
+      "duracao_s": 0.86
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Pausa persistente e mudanças da preferência do sistema",
+      "aprovado": true,
+      "duracao_s": 1.54
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Cena interativa e animação",
+      "aprovado": true,
+      "duracao_s": 1.32
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Abas: setas, Home, End e URL",
+      "aprovado": true,
+      "duracao_s": 0.87
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Aquecimento: todos os parâmetros, exemplos, gráfico e anúncio",
+      "aprovado": true,
+      "duracao_s": 2.02
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Aquecimento: entradas inválidas, Sol zero e meta atingida",
+      "aprovado": true,
+      "duracao_s": 1.23
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Água: parâmetros, limites, tabela e anúncio",
+      "aprovado": true,
+      "duracao_s": 2.07
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Automação: presets, histerese, bloqueios e histórico",
+      "aprovado": true,
+      "duracao_s": 2.91
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Comparativo: custos, tarifa zero e pouca irradiância",
+      "aprovado": true,
+      "duracao_s": 1.03
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Índice de leitura e progresso após redimensionamento",
+      "aprovado": true,
+      "duracao_s": 5.06
+    },
+    {
+      "navegador": "webkit",
+      "caso": "VLibras já carregado: modal e abertura",
+      "aprovado": true,
+      "duracao_s": 1.42
+    },
+    {
+      "navegador": "webkit",
+      "caso": "VLibras: carregamento sob demanda, falha e nova tentativa",
+      "aprovado": true,
+      "duracao_s": 1.41
+    },
+    {
+      "navegador": "webkit",
+      "caso": "VLibras: inicialização atrasada sem duplicar script",
+      "aprovado": true,
+      "duracao_s": 2.08
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Vídeos: catálogo vazio ou indisponível",
+      "aprovado": true,
+      "duracao_s": 0.79
+    },
+    {
+      "navegador": "webkit",
+      "caso": "Vídeos: itens inválidos, transcrição, legendas e reprodução",
+      "aprovado": true,
+      "duracao_s": 1.0
+    }
+  ],
+  "responsividade": [
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "chromium",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "firefox",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 320,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 390,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 768,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 1024,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "padrão",
+      "largura": 1440,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 320,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 390,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 768,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 1024,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "texto200",
+      "largura": 1440,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 320,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 390,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 768,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 1024,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "index.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "projeto-piscina.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "ciencia.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "simuladores.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "comparativos.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "sustentabilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "acessibilidade.html",
+      "overflow": false
+    },
+    {
+      "navegador": "webkit",
+      "perfil": "combinado200",
+      "largura": 1440,
+      "pagina": "mapa-do-site.html",
+      "overflow": false
+    }
+  ],
+  "sem_javascript": [
+    {
+      "navegador": "chromium",
+      "pagina": "index.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "chromium",
+      "pagina": "projeto-piscina.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "chromium",
+      "pagina": "ciencia.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "chromium",
+      "pagina": "simuladores.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "chromium",
+      "pagina": "comparativos.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "chromium",
+      "pagina": "sustentabilidade.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "chromium",
+      "pagina": "acessibilidade.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "chromium",
+      "pagina": "mapa-do-site.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "firefox",
+      "pagina": "index.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "firefox",
+      "pagina": "projeto-piscina.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "firefox",
+      "pagina": "ciencia.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "firefox",
+      "pagina": "simuladores.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "firefox",
+      "pagina": "comparativos.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "firefox",
+      "pagina": "sustentabilidade.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "firefox",
+      "pagina": "acessibilidade.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "firefox",
+      "pagina": "mapa-do-site.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "webkit",
+      "pagina": "index.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "webkit",
+      "pagina": "projeto-piscina.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "webkit",
+      "pagina": "ciencia.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "webkit",
+      "pagina": "simuladores.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "webkit",
+      "pagina": "comparativos.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "webkit",
+      "pagina": "sustentabilidade.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "webkit",
+      "pagina": "acessibilidade.html",
+      "aprovado": true
+    },
+    {
+      "navegador": "webkit",
+      "pagina": "mapa-do-site.html",
+      "aprovado": true
+    }
+  ],
+  "erros_js": [],
   "axe": [
     {
       "pagina": "index.html",
@@ -151,359 +3178,392 @@
       "violations": [],
       "incomplete": [],
       "passes": 41
+    },
+    {
+      "pagina": "index.html",
+      "preferencias": {
+        "tamanho": 200,
+        "contraste": true,
+        "dislexia": true,
+        "espaco": true
+      },
+      "modal": false,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ],
+      "passes": 41
+    },
+    {
+      "pagina": "projeto-piscina.html",
+      "preferencias": {
+        "tamanho": 200,
+        "contraste": true,
+        "dislexia": true,
+        "espaco": true
+      },
+      "modal": false,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        }
+      ],
+      "passes": 46
+    },
+    {
+      "pagina": "ciencia.html",
+      "preferencias": {
+        "tamanho": 200,
+        "contraste": true,
+        "dislexia": true,
+        "espaco": true
+      },
+      "modal": false,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ],
+      "passes": 45
+    },
+    {
+      "pagina": "simuladores.html",
+      "preferencias": {
+        "tamanho": 200,
+        "contraste": true,
+        "dislexia": true,
+        "espaco": true
+      },
+      "modal": false,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 13
+        }
+      ],
+      "passes": 47
+    },
+    {
+      "pagina": "comparativos.html",
+      "preferencias": {
+        "tamanho": 200,
+        "contraste": true,
+        "dislexia": true,
+        "espaco": true
+      },
+      "modal": false,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ],
+      "passes": 49
+    },
+    {
+      "pagina": "sustentabilidade.html",
+      "preferencias": {
+        "tamanho": 200,
+        "contraste": true,
+        "dislexia": true,
+        "espaco": true
+      },
+      "modal": false,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ],
+      "passes": 40
+    },
+    {
+      "pagina": "acessibilidade.html",
+      "preferencias": {
+        "tamanho": 200,
+        "contraste": true,
+        "dislexia": true,
+        "espaco": true
+      },
+      "modal": false,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 3
+        }
+      ],
+      "passes": 43
+    },
+    {
+      "pagina": "mapa-do-site.html",
+      "preferencias": {
+        "tamanho": 200,
+        "contraste": true,
+        "dislexia": true,
+        "espaco": true
+      },
+      "modal": false,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ],
+      "passes": 40
+    },
+    {
+      "pagina": "simuladores.html#agua",
+      "preferencias": {
+        "contraste": false
+      },
+      "modal": false,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        },
+        {
+          "id": "target-size",
+          "nodes": 1
+        }
+      ],
+      "passes": 46
+    },
+    {
+      "pagina": "simuladores.html#agua",
+      "preferencias": {
+        "contraste": true
+      },
+      "modal": false,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        },
+        {
+          "id": "target-size",
+          "nodes": 1
+        }
+      ],
+      "passes": 46
+    },
+    {
+      "pagina": "simuladores.html#automacao",
+      "preferencias": {
+        "contraste": false
+      },
+      "modal": false,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        },
+        {
+          "id": "target-size",
+          "nodes": 1
+        }
+      ],
+      "passes": 46
+    },
+    {
+      "pagina": "simuladores.html#automacao",
+      "preferencias": {
+        "contraste": true
+      },
+      "modal": false,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        },
+        {
+          "id": "target-size",
+          "nodes": 1
+        }
+      ],
+      "passes": 46
+    },
+    {
+      "pagina": "acessibilidade.html",
+      "preferencias": {
+        "tamanho": 200,
+        "contraste": false,
+        "espaco": true,
+        "dislexia": true
+      },
+      "modal": true,
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
+    },
+    {
+      "pagina": "acessibilidade.html",
+      "preferencias": {
+        "tamanho": 200,
+        "contraste": true,
+        "espaco": true,
+        "dislexia": true
+      },
+      "modal": true,
+      "violations": [],
+      "incomplete": [],
+      "passes": 27
     }
   ],
-  "responsividade": [
+  "modelo_cientifico": {
+    "testes": 15,
+    "aprovados": 15
+  },
+  "regressoes": {
+    "menu_escape_no_botao": {
+      "esperado": "false",
+      "obtido": "true"
+    },
+    "vlibras_carregado_no_modal": {
+      "modal_deveria_fechar": true,
+      "modal_aberto": true
+    },
+    "pausa_entre_paginas": {
+      "antes": "true",
+      "depois": null
+    },
+    "video_valido_apos_invalido": {
+      "esperado": 1,
+      "obtido": 0
+    }
+  },
+  "estilos": {
+    "antes_bytes": 68889,
+    "depois_bytes": 68357,
+    "antes_gzip": 14872,
+    "depois_gzip": 12800,
+    "declaracoes_substituidas_removidas": 293,
+    "regras_removidas": 105,
+    "comparacoes_visuais": 32,
+    "diferencas_visuais": 0,
+    "reducao_gzip_percentual": 13.93
+  },
+  "referencias_externas": [
     {
-      "pagina": "index.html",
-      "largura": 320,
-      "overflow": false
+      "url": "https://openstax.org/books/college-physics-2e/pages/14-2-temperature-change-and-heat-capacity",
+      "status": 200,
+      "destino": "https://openstax.org/books/college-physics-2e/pages/14-2-temperature-change-and-heat-capacity"
     },
     {
-      "pagina": "projeto-piscina.html",
-      "largura": 320,
-      "overflow": false
+      "url": "https://vlibras.gov.br/doc/widget/index.html",
+      "status": 200,
+      "destino": "https://vlibras.gov.br/doc/widget/index.html"
     },
     {
-      "pagina": "ciencia.html",
-      "largura": 320,
-      "overflow": false
+      "url": "https://vlibras.gov.br/doc/widget/installation/webpageintegration.html",
+      "status": 200,
+      "destino": "https://vlibras.gov.br/doc/widget/installation/webpageintegration.html"
     },
     {
-      "pagina": "simuladores.html",
-      "largura": 320,
-      "overflow": false
+      "url": "https://www.eia.gov/energyexplained/solar/solar-thermal-collectors.php",
+      "status": 200,
+      "destino": "https://www.eia.gov/energyexplained/solar/solar-thermal-collectors.php"
     },
     {
-      "pagina": "comparativos.html",
-      "largura": 320,
-      "overflow": false
+      "url": "https://www.epa.gov/watersense/pool-water-efficiency",
+      "status": 200,
+      "destino": "https://www.epa.gov/watersense/pool-water-efficiency"
     },
     {
-      "pagina": "sustentabilidade.html",
-      "largura": 320,
-      "overflow": false
-    },
-    {
-      "pagina": "acessibilidade.html",
-      "largura": 320,
-      "overflow": false
-    },
-    {
-      "pagina": "mapa-do-site.html",
-      "largura": 320,
-      "overflow": false
-    },
-    {
-      "pagina": "index.html",
-      "largura": 390,
-      "overflow": false
-    },
-    {
-      "pagina": "projeto-piscina.html",
-      "largura": 390,
-      "overflow": false
-    },
-    {
-      "pagina": "ciencia.html",
-      "largura": 390,
-      "overflow": false
-    },
-    {
-      "pagina": "simuladores.html",
-      "largura": 390,
-      "overflow": false
-    },
-    {
-      "pagina": "comparativos.html",
-      "largura": 390,
-      "overflow": false
-    },
-    {
-      "pagina": "sustentabilidade.html",
-      "largura": 390,
-      "overflow": false
-    },
-    {
-      "pagina": "acessibilidade.html",
-      "largura": 390,
-      "overflow": false
-    },
-    {
-      "pagina": "mapa-do-site.html",
-      "largura": 390,
-      "overflow": false
-    },
-    {
-      "pagina": "index.html",
-      "largura": 768,
-      "overflow": false
-    },
-    {
-      "pagina": "projeto-piscina.html",
-      "largura": 768,
-      "overflow": false
-    },
-    {
-      "pagina": "ciencia.html",
-      "largura": 768,
-      "overflow": false
-    },
-    {
-      "pagina": "simuladores.html",
-      "largura": 768,
-      "overflow": false
-    },
-    {
-      "pagina": "comparativos.html",
-      "largura": 768,
-      "overflow": false
-    },
-    {
-      "pagina": "sustentabilidade.html",
-      "largura": 768,
-      "overflow": false
-    },
-    {
-      "pagina": "acessibilidade.html",
-      "largura": 768,
-      "overflow": false
-    },
-    {
-      "pagina": "mapa-do-site.html",
-      "largura": 768,
-      "overflow": false
-    },
-    {
-      "pagina": "index.html",
-      "largura": 1024,
-      "overflow": false
-    },
-    {
-      "pagina": "projeto-piscina.html",
-      "largura": 1024,
-      "overflow": false
-    },
-    {
-      "pagina": "ciencia.html",
-      "largura": 1024,
-      "overflow": false
-    },
-    {
-      "pagina": "simuladores.html",
-      "largura": 1024,
-      "overflow": false
-    },
-    {
-      "pagina": "comparativos.html",
-      "largura": 1024,
-      "overflow": false
-    },
-    {
-      "pagina": "sustentabilidade.html",
-      "largura": 1024,
-      "overflow": false
-    },
-    {
-      "pagina": "acessibilidade.html",
-      "largura": 1024,
-      "overflow": false
-    },
-    {
-      "pagina": "mapa-do-site.html",
-      "largura": 1024,
-      "overflow": false
-    },
-    {
-      "pagina": "index.html",
-      "largura": 1440,
-      "overflow": false
-    },
-    {
-      "pagina": "projeto-piscina.html",
-      "largura": 1440,
-      "overflow": false
-    },
-    {
-      "pagina": "ciencia.html",
-      "largura": 1440,
-      "overflow": false
-    },
-    {
-      "pagina": "simuladores.html",
-      "largura": 1440,
-      "overflow": false
-    },
-    {
-      "pagina": "comparativos.html",
-      "largura": 1440,
-      "overflow": false
-    },
-    {
-      "pagina": "sustentabilidade.html",
-      "largura": 1440,
-      "overflow": false
-    },
-    {
-      "pagina": "acessibilidade.html",
-      "largura": 1440,
-      "overflow": false
-    },
-    {
-      "pagina": "mapa-do-site.html",
-      "largura": 1440,
-      "overflow": false
-    },
-    {
-      "pagina": "index.html",
-      "largura": 320,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "simuladores.html",
-      "largura": 320,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "comparativos.html",
-      "largura": 320,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "acessibilidade.html",
-      "largura": 320,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "index.html",
-      "largura": 390,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "simuladores.html",
-      "largura": 390,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "comparativos.html",
-      "largura": 390,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "acessibilidade.html",
-      "largura": 390,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "index.html",
-      "largura": 768,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "simuladores.html",
-      "largura": 768,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "comparativos.html",
-      "largura": 768,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "acessibilidade.html",
-      "largura": 768,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "index.html",
-      "largura": 1024,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "simuladores.html",
-      "largura": 1024,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "comparativos.html",
-      "largura": 1024,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "acessibilidade.html",
-      "largura": 1024,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "index.html",
-      "largura": 1440,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "simuladores.html",
-      "largura": 1440,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "comparativos.html",
-      "largura": 1440,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "acessibilidade.html",
-      "largura": 1440,
-      "leitura_ampliada": true,
-      "overflow": false
-    },
-    {
-      "pagina": "index.html",
-      "largura": 390,
-      "texto_200_percentual": true,
-      "overflow": false
-    },
-    {
-      "pagina": "simuladores.html",
-      "largura": 390,
-      "texto_200_percentual": true,
-      "overflow": false
-    },
-    {
-      "pagina": "acessibilidade.html",
-      "largura": 390,
-      "texto_200_percentual": true,
-      "overflow": false
+      "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+      "status": 200,
+      "destino": "https://www.w3.org/WAI/WCAG22/quickref/"
     }
   ],
-  "interacoes": [
-    "Link de salto, menu e modal operáveis pelo teclado, com retorno de foco.",
-    "Cena da piscina: etapas pelo teclado, cobertura animada e pausa global com nome acessível atualizado.",
-    "Abas, aquecimento, restauração, campo vazio, controle por setas, Sol zero e meta atingida.",
-    "Economia de água: cenário de referência, cobertura zero e cobertura integral.",
-    "Automação: histerese, nível baixo, falha e restauração.",
-    "Comparativo: ausência de Sol e meta já atingida, sem custo fictício.",
-    "Persistência de contraste, OpenDyslexic, espaçamento, ampliação de 150% e movimentos reduzidos.",
-    "Refluxo com texto ampliado a 200% nas páginas de início, simuladores e acessibilidade.",
-    "Conteúdo científico e referências disponíveis sem JavaScript.",
-    "Preferência do sistema por movimentos reduzidos respeitada, com etapas interativas disponíveis."
+  "vlibras_real": {
+    "app_aberto": true,
+    "modal_fechado_na_reabertura": true,
+    "botao_oficial_disponivel": true,
+    "erros_js": [],
+    "requisicoes_confirmadas": [
+      {
+        "url": "https://cdn.jsdelivr.net/gh/spbgovbr-vlibras/vlibras-portal@v7.12.2/app/vlibras-plugin.js",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/spbgovbr-vlibras/vlibras-portal@v7.12.2/app/vlibras-plugin-app.js?v=7.12.2",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://vlibras.gov.br/app/unity/index.html?v=7.12.2",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://vlibras.gov.br/app/unity/index.html?v=7.12.2",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  "limites": [
+    "Vídeo técnico de teste usado apenas na reprodução, legendas e transcrição; não publicado e não é gravação em Libras.",
+    "Sem teste humano de tradução em Libras ou uso contínuo com NVDA/VoiceOver.",
+    "Navegadores automatizados em Linux; não substitui execução em aparelhos físicos.",
+    "Nenhuma medição ou acionamento de hardware real foi realizado."
   ],
-  "erros_js": []
+  "validacao_catalogo_e_sitemap": [
+    {
+      "caso": "vazio",
+      "aprovado": true,
+      "saida": "8 páginas: links, âncoras, recursos locais, sitemap, catálogo e referências de acessibilidade válidos."
+    },
+    {
+      "caso": "válido",
+      "aprovado": true,
+      "saida": "8 páginas: links, âncoras, recursos locais, sitemap, catálogo e referências de acessibilidade válidos."
+    },
+    {
+      "caso": "campo ausente",
+      "aprovado": true,
+      "saida": "Vídeo 1: título, arquivo, legendas e transcrição são obrigatórios."
+    },
+    {
+      "caso": "endereço externo",
+      "aprovado": true,
+      "saida": "Vídeo 1: arquivo deve ser um arquivo local de assets/videos/ com o formato correto."
+    },
+    {
+      "caso": "arquivo ausente",
+      "aprovado": true,
+      "saida": "Vídeo 1: arquivo ausente assets/videos/ausente.mp4"
+    },
+    {
+      "caso": "formato incorreto",
+      "aprovado": true,
+      "saida": "Vídeo 1: legendas deve ser um arquivo local de assets/videos/ com o formato correto."
+    },
+    {
+      "caso": "cabeçalho de legendas inválido",
+      "aprovado": true
+    },
+    {
+      "caso": "sitemap incompleto",
+      "aprovado": true
+    }
+  ],
+  "casos_reexecutados": "Casos de mídia reexecutados após ajustar o teste à seleção nativa de legendas no WebKit."
 }

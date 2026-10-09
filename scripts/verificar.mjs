@@ -1,6 +1,8 @@
 import {readFile,readdir,access} from 'node:fs/promises';
 import {resolve,dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
+import modelos from '../assets/js/modelos.js';
+import {baseUrl} from './layout.mjs';
 const raiz=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const arquivos=(await readdir(raiz)).filter(n=>n.endsWith('.html'));
 const documentos=new Map();const erros=[];
@@ -31,6 +33,30 @@ for(const arquivoCss of (await readdir(resolve(raiz,'assets/css'))).filter(n=>n.
   }
 }
 const parametros=JSON.parse(await readFile(resolve(raiz,'dados/parametros.json'),'utf8'));
-if(parametros.calor_especifico.valor!==4186)erros.push('Calor específico não corresponde ao modelo documentado.');
+if(parametros.calor_especifico.valor!==modelos.CALOR_ESPECIFICO)erros.push('Calor específico não corresponde ao modelo documentado.');
+if(parametros.comparativo.potencia_bomba_w!==modelos.CENARIO_COMPARATIVO.bomba)erros.push('Potência da bomba não corresponde ao comparativo documentado.');
+const sitemap=await readFile(resolve(raiz,'sitemap.xml'),'utf8');
+const destinos=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+if(destinos.length!==arquivos.length || arquivos.some(nome=>!destinos.includes(baseUrl+nome)))erros.push('O sitemap deve listar todas as páginas, uma vez cada.');
+const catalogo=JSON.parse(await readFile(resolve(raiz,'dados/videos.json'),'utf8'));
+if(!Array.isArray(catalogo.videos))erros.push('O catálogo deve conter uma lista de vídeos.');
+else for(const [indice,item] of catalogo.videos.entries()){
+  const prefixo=`Vídeo ${indice+1}:`;
+  if(!item || !['titulo','arquivo','legendas','transcricao'].every(chave=>typeof item[chave]==='string' && item[chave].trim())){
+    erros.push(`${prefixo} título, arquivo, legendas e transcrição são obrigatórios.`);continue;
+  }
+  for(const [chave,extensao] of [['arquivo',/\.(mp4|webm)$/i],['legendas',/\.vtt$/i]]){
+    const url=new URL(item[chave],baseUrl);
+    const pasta=new URL('assets/videos/',baseUrl);
+    if(url.origin!==pasta.origin || !url.pathname.startsWith(pasta.pathname) || !extensao.test(url.pathname)){
+      erros.push(`${prefixo} ${chave} deve ser um arquivo local de assets/videos/ com o formato correto.`);continue;
+    }
+    const caminho=decodeURIComponent(url.pathname.slice(new URL(baseUrl).pathname.length));
+    try{
+      await access(resolve(raiz,caminho));
+      if(chave==='legendas' && !(await readFile(resolve(raiz,caminho),'utf8')).trimStart().startsWith('WEBVTT'))erros.push(`${prefixo} legendas sem cabeçalho WEBVTT.`);
+    }catch{erros.push(`${prefixo} arquivo ausente ${caminho}`);}
+  }
+}
 if(erros.length){console.error(erros.join('\n'));process.exit(1);}
-console.log(`${arquivos.length} páginas: links, âncoras, recursos locais e referências de acessibilidade válidos.`);
+console.log(`${arquivos.length} páginas: links, âncoras, recursos locais, sitemap, catálogo e referências de acessibilidade válidos.`);

@@ -34,7 +34,7 @@ O GitHub Pages já está habilitado com a origem **GitHub Actions**. Novos envio
 - Página inicial: `scripts/pagina-inicial.mjs`.
 - Desenhos da piscina e das experiências: `scripts/ilustracoes.mjs`.
 - Estrutura compartilhada: `scripts/layout.mjs`.
-- Componentes: `assets/css/estilos.css`; identidade visual: `assets/css/identidade.css`.
+- Componentes e identidade visual: `assets/css/estilos.css`.
 - Fórmulas: `assets/js/modelos.js`.
 - Interações: `assets/js/simuladores.js` e `assets/js/principal.js`.
 - Etapas da ilustração, entradas ao rolar e índice de leitura: `assets/js/visual.js`.
@@ -44,6 +44,7 @@ Após editar templates, execute `node scripts/construir.mjs` e envie os HTML atu
 
 ## Documentação
 
+- [Relatório da revisão completa — 09/10/2026](docs/relatorio-revisao-2026-10-09.md)
 - [Critérios da avaliação](docs/criterios-avaliacao.md)
 - [Cálculos e fontes](docs/calculos-e-fontes.md)
 - [Acessibilidade e verificação](docs/verificacao-acessibilidade.md)
@@ -51,3 +52,14 @@ Após editar templates, execute `node scripts/construir.mjs` e envie os HTML atu
 - [Fontes e licenças](assets/fontes/FONTES.md)
 
 Os cenários são didáticos, sem medições de campo ou sensores conectados. A estrutura para vídeos em Libras está pronta; as gravações reais ainda não foram fornecidas.
+
+## Testar as funções no navegador
+
+As instruções para instalar Playwright e axe-core estão na [documentação de verificação](docs/verificacao-acessibilidade.md). Com o servidor local em execução:
+
+```bash
+python3 testes/navegador.py --axe /tmp/sol-agua-axe.min.js --saida test-results
+python3 testes/revisao.py --navegadores chromium firefox webkit --saida test-results/revisao
+```
+
+A revisão inclui teclado, ajustes de 90% a 200%, simuladores, comparativo, falhas de conexão simuladas, catálogo de vídeos e conteúdo sem JavaScript. As bibliotecas de teste não fazem parte do site publicado.

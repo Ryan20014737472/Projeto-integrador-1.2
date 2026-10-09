@@ -1,6 +1,6 @@
 const test=require('node:test');
 const assert=require('node:assert/strict');
-const {aquecimento,agua,automacao,comparacao}=require('../assets/js/modelos.js');
+const {aquecimento,agua,automacao,comparacao,CENARIO_COMPARATIVO}=require('../assets/js/modelos.js');
 const base={volume:10000,inicial:22,alvo:27,area:12,irradiancia:800,eficiencia:65,perdas:15};
 const perto=(valor,esperado)=>assert.ok(Math.abs(valor-esperado)<1e-9,`${valor} ≠ ${esperado}`);
 
@@ -18,8 +18,37 @@ test('meta atingida ou inferior dispensa acrescentar calor',()=>{
   for(const alvo of [22,20]){const r=aquecimento({...base,alvo,irradiancia:0});assert.equal(r.energia,0);assert.equal(r.horas,0);}
 });
 test('valores inválidos não são tratados como medições zero',()=>{
-  for(const volume of ['',null,undefined,NaN,Infinity,-1,true])assert.throws(()=>aquecimento({...base,volume}),RangeError);
+  for(const volume of ['', '   ', '\n', null,undefined,NaN,Infinity,-1,true, false, [], [10000], {}])assert.throws(()=>aquecimento({...base,volume}),RangeError);
   assert.throws(()=>aquecimento({...base,eficiencia:0}),RangeError);assert.throws(()=>aquecimento({...base,perdas:100}),RangeError);
+});
+test('dados numéricos dos formulários preservam unidades e resultados',()=>{
+  const strings=Object.fromEntries(Object.entries(base).map(([chave,valor])=>[chave,String(valor)]));
+  assert.deepEqual(aquecimento(strings),aquecimento(base));
+  const dados={area:32,evaporacao:5,dias:30,horasCoberta:16,reducao:80};
+  const dadosStrings=Object.fromEntries(Object.entries(dados).map(([chave,valor])=>[chave,String(valor)]));
+  assert.deepEqual(agua(dadosStrings),agua(dados));
+});
+test('cobertura progressiva conserva o balanço e nunca cria água',()=>{
+  for(const horasCoberta of [0,1,12,16,24])for(const reducao of [0,50,80,95]){
+    const r=agua({area:32,evaporacao:5,dias:30,horasCoberta,reducao});
+    perto(r.semCobertura,r.comCobertura+r.economizada);
+    assert.ok(r.comCobertura>=0 && r.comCobertura<=r.semCobertura);
+    assert.ok(r.economizada>=0 && r.economizada<=r.semCobertura);
+  }
+});
+test('limites dos modelos rejeitam condições fora das hipóteses',()=>{
+  const dados={area:32,evaporacao:5,dias:30,horasCoberta:16,reducao:80};
+  for(const entrada of [{...dados,horasCoberta:25},{...dados,reducao:100},{...dados,dias:0}])assert.throws(()=>agua(entrada),RangeError);
+  for(const bomba of ['',-1,5001])assert.throws(()=>comparacao({...base,tarifa:.9,bomba}),RangeError);
+  assert.throws(()=>comparacao({...base,bomba:100,tarifa:11}),RangeError);
+});
+test('comparativo compartilhado permanece consistente com o cenário documentado',()=>{
+  assert.ok(Object.isFrozen(CENARIO_COMPARATIVO));
+  const r=comparacao({...base,...CENARIO_COMPARATIVO,tarifa:.9});
+  const gratuito=comparacao({...base,...CENARIO_COMPARATIVO,tarifa:0});
+  perto(r.solar.energia,gratuito.solar.energia);
+  perto(r.energiaSolarRede,gratuito.energiaSolarRede);
+  assert.equal(gratuito.custoSolar,0);assert.equal(gratuito.custoEletrico,0);
 });
 test('geometria e cobertura: cenário de 32 m² poupa 2.560 L',()=>{
   const r=agua({area:32,evaporacao:5,dias:30,horasCoberta:16,reducao:80});

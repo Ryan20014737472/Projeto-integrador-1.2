@@ -2,9 +2,7 @@
 (function () {
   'use strict';
   const root = document.documentElement;
-  const movimentoReduzido = () => root.dataset.reducedMotion === 'true'
-    || root.dataset.paused === 'true'
-    || window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const movimentoReduzido = () => window.LeituraSolAgua.movimentosReduzidos() || window.LeituraSolAgua.prefs.pausado;
 
   const cena = document.querySelector('[data-pool-scene]');
   if (cena) {
@@ -66,6 +64,7 @@
     }
     window.addEventListener('scroll', agendarProgresso, {passive: true});
     window.addEventListener('resize', agendarProgresso, {passive: true});
+    new ResizeObserver(agendarProgresso).observe(document.body);
     atualizarProgresso();
   }
 })();
